@@ -16,6 +16,7 @@ def get_calibration_parameters(img_dir):
                                    constants.SQUARE_LENGTH, constants.MARKER_LENGTH, dictionary)
     params = cv2.aruco.DetectorParameters()
     detector = cv2.aruco.ArucoDetector(dictionary, params)
+
     
     # Robust file searching (handles uppercase/lowercase and multiple formats)
     valid_extensions = ('.png', '.jpg', '.jpeg')
